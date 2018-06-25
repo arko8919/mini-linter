@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mini Linter</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,700" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Mini Linter</h1>
+    <p>Editor Of Repeated And Overused Words</p>
+</header>
+<main role="main">
+    <section class="row container">
+        <div class="col-2 content repeated-words">
+            <h4>Repeated words</h4>
+            <ul class="repeated-words-list"></ul>
+        </div>
+        <div class="col-8 content editor">
+            <div class="editor-nav">
+                <button class="editor-nav-buttons active" value="add-text">Editor</button>
+                <button class="editor-nav-buttons" value="add-overused-words">Overused</button>
+                <button class="editor-nav-buttons" value="instruction">Instruction</button>
+                <div class="underline"></div>
+            </div>
+            <div class="editor-sections">
+                <section class="add-text">
+                    <textarea title="text-area" id="text-area" placeholder="Type text here ..."></textarea>
+                    <div id="repeated-words-output">Artur</div>
+                    <div id="overused-words-output">Artur</div>
+                </section>
+                <section class="row add-overused-words">
+                    <div class="col-5">
+                        <label for="input">Add Words</label>
+                        <input id="input" type="text" title="overused-words-input"/>
+                        <button id="overused-words-btn">Add</button>
+                        <p>To add more than one word at the same time use spaces or a comma to separate words!</p>
+                    </div>
+                    <div class="col-7">
+                        <h3>Here are the some words in order of their overuse</h3>
+                        <p>Overused Words On CV</p>
+                        <ol>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                Passionate
+                            </li>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                Creative
+                            </li>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                Driven
+                            </li>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                Responsible
+                            </li>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                Strategic
+                            </li>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                Organizational
+                            </li>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                Expert
+                            </li>
+                        </ol>
+                        <p>Common overused words</p>
+                        <ol>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                Other
+                            </li>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                More
+                            </li>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                New
+                            </li>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                Good
+                            </li>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                Best
+                            </li>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                Many
+                            </li>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                Important
+                            </li>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                Great
+                            </li>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                First
+                            </li>
+                            <li>
+                                <button class="material-icons example-words">add</button>
+                                Able
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="instruction">
+                    <article>
+                        <h3>Adding overused words to the list</h3>
+                        <ol>
+                            <li>Go to overused words section.</li>
+                            <li>In input area, type word/words of your choosing (u can use a comma or whitespace as
+                                separator).
+                            </li>
+                            <li>Click on add button.</li>
+                            <li>Word/Words can be found on overused words list.</li>
+                        </ol>
+                        <p><strong>Repeated words</strong> - to find matches in text, click word on the repeated words
+                            list.
+                        </p>
+                        <p><strong>Overused words</strong> - to find matches in the text, check the box on the list
+                            of words that are being overused.
+                        </p>
+                    </article>
+                </section>
+            </div>
+        </div>
+        <div class="col-2 content overused-words">
+            <h4>Overused words</h4>
+            <div class="overused-words-list"></div>
+        </div>
+    </section>
+    <section class="string-data">
+        <p>Words: <span>0</span></p>
+        <p>Sentences: <span>0</span></p>
+        <p>Characters: <span>0</span></p>
+    </section>
+</main>
+<footer>
+    <p>Artur S-D @2018</p>
+</footer>
+<noscript>
+    You need to enable JavaScript to run this app.
+</noscript>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
